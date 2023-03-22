@@ -51,7 +51,7 @@ for (let i = 0; i < team.length; i++) {
     message += `<div class="card">
                 <img src="./img/${member.image}" class="card-img-top" alt="img caroll">
                 <div class="card-body text-center">
-                    <h5 class="card-title">${member.name} ${member.surname}</h5>
+                    <h5 class="fs-3">${member.name} ${member.surname}</h5>
                     <p class="card-text">${member.role}</p>
                 </div>
             </div>`;
