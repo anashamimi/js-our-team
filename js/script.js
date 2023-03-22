@@ -28,5 +28,28 @@ for(let key in team1){
 
 team2.name = 'Angela';
 team2.surname = 'Caroll';
-team2.role = 'Caroll';
-team2.image = 'Caroll';
+team2.role = 'Chief Editor';
+team2.image = 'angela-caroll-chief-editor.jpg';
+
+team3.name = 'Walter';
+team3.surname = 'Gordon';
+team3.role = 'Chief Editor';
+team3.image = 'walter-gordon-office-manager.jpg';
+
+team4.name = 'Angela';
+team4.surname = 'Lopez';
+team4.role = 'Social Media Manager';
+team4.image = 'angela-lopez-social-media-manager.jpg';
+
+team5.name = 'Scott';
+team5.surname = 'Estrada';
+team5.role = 'Developer';
+team5.image = 'scott-estrada-developer.jpg';
+
+team6.name = 'Barbara';
+team6.surname = 'Ramos';
+team6.role = 'Graphic Designer';
+team6.image = 'barbara-ramos-graphic-designer.jpg';
+
+
+console.log(team1, team2, team3, team4, team5, team6)
