@@ -1,0 +1,16 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 50rem;
+    margin: 0 auto;
+}
+
+.card img{
+    width: 100%;
+}

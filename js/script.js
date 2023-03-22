@@ -52,4 +52,5 @@ team6.role = 'Graphic Designer';
 team6.image = 'barbara-ramos-graphic-designer.jpg';
 
 
-console.log(team1, team2, team3, team4, team5, team6)
+console.log(team1, team2, team3, team4, team5, team6);
+
