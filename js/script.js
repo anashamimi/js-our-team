@@ -5,52 +5,60 @@
 // Scott    Estrada	Developer	              scott-estrada-developer.jpg
 // Barbara  Ramos	    Graphic Designer	      barbara-ramos-graphic-designer.jpg
 
-const team1 = {
-    name : 'Wayne',
-    surname : 'Barnett',
-    role: 'Founder & CEO',
-    image: 'wayne-barnett-founder-ceo.jpg'
-};
+const team = [
+    {
+        name: 'Wayne',
+        surname: 'Barnett',
+        role: 'Founder & CEO',
+        image: 'wayne-barnett-founder-ceo.jpg'
+    },
+    {
+        name: 'Angela',
+        surname: 'Caroll',
+        role: 'Chief Editor',
+        image: 'angela-caroll-chief-editor.jpg'
+    },
+    {
+        name: 'Walter',
+        surname: 'Gordon',
+        role: 'Chief Editor',
+        image: 'walter-gordon-office-manager.jpg'
+    },
+    {
+        name: 'Angela',
+        surname: 'Lopez',
+        role: 'Social Media Manager',
+        image: 'angela-lopez-social-media-manager.jpg'
+    },
+    {
+        name: 'Scott',
+        surname: 'Estrada',
+        role: 'Developer',
+        image: 'scott-estrada-developer.jpg'
+    },
+    {
+        name: 'Barbara',
+        surname: 'Ramos',
+        role: 'Graphic Designer',
+        image: 'barbara-ramos-graphic-designer.jpg'
+    }
+];
 
-const team2 = {};
-const team3 = {};
-const team4 = {};
-const team5 = {};
-const team6 = {};
+let message = '';
 
-for(let key in team1){
-    team2[key] = team1[key];
-    team3[key] = team1[key];
-    team4[key] = team1[key];
-    team5[key] = team1[key];
-    team6[key] = team1[key];
+for (let i = 0; i < team.length; i++) {
+    const member = team[i];
+    message += `<div class="card">
+                <img src="./img/${member.image}" class="card-img-top" alt="img caroll">
+                <div class="card-body text-center">
+                    <h5 class="card-title">${member.name} ${member.surname}</h5>
+                    <p class="card-text">${member.role}</p>
+                </div>
+            </div>`;
 }
 
-team2.name = 'Angela';
-team2.surname = 'Caroll';
-team2.role = 'Chief Editor';
-team2.image = 'angela-caroll-chief-editor.jpg';
-
-team3.name = 'Walter';
-team3.surname = 'Gordon';
-team3.role = 'Chief Editor';
-team3.image = 'walter-gordon-office-manager.jpg';
-
-team4.name = 'Angela';
-team4.surname = 'Lopez';
-team4.role = 'Social Media Manager';
-team4.image = 'angela-lopez-social-media-manager.jpg';
-
-team5.name = 'Scott';
-team5.surname = 'Estrada';
-team5.role = 'Developer';
-team5.image = 'scott-estrada-developer.jpg';
-
-team6.name = 'Barbara';
-team6.surname = 'Ramos';
-team6.role = 'Graphic Designer';
-team6.image = 'barbara-ramos-graphic-designer.jpg';
+let cards = document.getElementById('cards');
+cards.innerHTML = message;
 
 
-console.log(team1, team2, team3, team4, team5, team6);
 
